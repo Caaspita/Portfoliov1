@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Caspani</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <p class="menu_nombre">Caspita</p>
+            <ul>
+                <li><a class="menu_items" href="#">Inicio</a></li>
+                <li><a class="menu_items" href="#">Proyetos</a></li>
+                <li><a class="menu_items" href="#">Acerca de</a></li>
+                <li><a class="menu_items" href="#">Contacto</a></li>
+                <label class="mode">
+                    <input type="checkbox" checked="checked" id="darkModeBtn">
+                    <img class="mode-icon mode-sun" src="./img/sun.svg" alt="Light mode">
+                    <img class="mode-icon mode-moon" src="./img/moon.svg" alt="Dark mode">
+                </label>
+            </ul>
+        </nav>
+    </header>
+   <main class="intro">
+        <div class="intro_text">
+            <h1>Front-End Web<br>Developer.</h1>
+            <p>¡Hola! Soy Lucas Caspani, un desarrollador Front-End dedicado que se centra en crear experiencias digitales fluidas y fáciles de utilizar.</p>
+            <div class="intro_btns">
+                <a href="#" class="intro_btn"><img src="./img/linkedin-in.svg" alt="Linkedin Icon"></a>
+                <a href="#" class="intro_btn"><img class="git" src="./img/github.svg" alt="Github Icon"></a>
+                <button class="intro_btn intro_btn-cv">CV</button>
+            </div>
+        </div>
+        <img class="intro_img" src="./img/perfil.webp" alt="Imagen Perfil">
+    </main>
+    <section class="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyectos_items">
+            <div class="proyectos_item">
+                <h3>Titulo</h3>
+                <img class="proyecto_img" src="./img/Proyecto.webp" alt="Proyecto Imagen">
+                <p>Pagina realizada como desafio de la web Front-End Mentor, en la cual el objetivo era realizar una calculadora de propinas.</p>
+                <div class="proyecto_tech">
+                    <img class="proyecto_tech-icon" src="./img/html5.svg" alt="HTML Icon">
+                    <img class="proyecto_tech-icon" src="./img/css3-alt.svg" alt="CSS Icon">
+                    <img class="proyecto_tech-icon" src="./img/js.svg" alt=" JS Icon">
+                </div>
+            </div>
+            <div class="proyectos_item">
+                <h3>Encriptador</h3>
+                <img class="proyecto_img" src="./img/Encriptador.webp" alt="Proyecto Imagen">
+                <p>Pagina realizada como desafio del curso de alura latam, en el cual debiamos realizar un ecriptador de texto</p>
+                <div class="proyecto_tech">
+                    <img class="proyecto_tech-icon" src="./img/html5.svg" alt="HTML Icon">
+                    <img class="proyecto_tech-icon" src="./img/css3-alt.svg" alt="CSS Icon">
+                    <img class="proyecto_tech-icon" src="./img/js.svg" alt=" JS Icon">
+                </div>
+            </div>
+        </div>
+
+        <a class="proyectos_mas-btn intro_btn" href="#">ver más</a>
+    </section>
+    <section class="contacto">
+        <h2>Contactame</h2>
+        <form id="form">
+            <div class="contacto_form-item">
+                <label class="contacto_label" for="nombre">Nombre</label>
+                <input class="contacto_input inputs" id="nombre" type="text" name="nombre" placeholder="Escribe tu nombre">
+                <p class="contacto_error-texto" id="error_nombre"></p>
+            </div>
+            <div class="contacto_form-item">
+                <label class="contacto_label" for="emal">Email</label>
+                <input class="contacto_input inputs" id="email" type="text" name="email" placeholder="Escribe tu email">
+                <p class="contacto_error-texto" id="error_email"></p>
+            </div>
+            <div class="contacto_form-item">
+                <label class="contacto_label" for="asunto">Asunto</label>
+                <input class="contacto_input inputs" id="asunto" type="text" name="asunto" placeholder="Ingrese el asunto">
+                <p class="contacto_error-texto" id="error_asunto"></p>
+            </div>
+            <div class="contacto_form-item">
+                <label class="contacto_label" for="mensaje">Mensaje</label>
+                <textarea class="inputs" name="mensaje" id="mensaje" cols="50" rows="10"></textarea>
+                <p class="contacto_error-texto" id="error_mensaje"></p>
+            </div>
+            <div class="contacto_form-btn">
+                <button class="proyectos_mas-btn intro_btn" type="submit">Enivar</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <p>Desarrollado por caspita</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
