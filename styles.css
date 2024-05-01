@@ -164,18 +164,12 @@ p{
     border: solid 1px var(--verde);
     box-shadow: 0 0 5px var(--verde);
     cursor: pointer;
-    
-}
-.intro_btn img{
-    
     color: var(--verde);
-    fill: currentColor;
-    stroke: currentColor;
+       
 }
-.git{
-    color: var(--verde);
-    stroke: currentColor;
-    fill: currentColor;
+.intro_btn-link{
+    width: 50px;
+    height: 50px;
 }
 .intro_btn:hover{
     background-color: var(--verde);
@@ -291,9 +285,6 @@ textarea{
     justify-content: center;
     margin-top: 40px; 
 }
-.inputs{
-    
-}
 .inputs:focus{
     outline: none;
     border: solid 1px var(--verde);
@@ -312,9 +303,6 @@ textarea{
     margin-left: 10px;
     
 }
-
-
-
 
 
 /* --- Footer --- */
